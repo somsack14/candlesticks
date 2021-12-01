@@ -420,7 +420,7 @@ class Chart extends StatelessWidget {
                               onPanDown(update.localPosition.dx);
                             },
                             child: Container(
-                              color: ColorPalette.whiteColor,
+                              color: Color.fromARGB(1, 255, 255, 255),
                             ),
                           ),
                         ),
