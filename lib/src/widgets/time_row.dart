@@ -116,12 +116,12 @@ class TimeRow extends StatelessWidget {
             bottom: 0,
             left: math.max(indicatorX - 50, 0),
             child: Container(
-              color: ColorPalette.digalogColor,
+              color: ColorPalette.primaryColor,
               child: Center(
                 child: Text(
                   dateFormatter(indicatorTime),
                   style: TextStyle(
-                    color: ColorPalette.grayColor,
+                    color: ColorPalette.whiteColor,
                     fontSize: 12,
                   ),
                 ),
