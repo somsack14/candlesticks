@@ -228,8 +228,8 @@ class Chart extends StatelessWidget {
                                       Container(
                                         color: candles[index >= 0 ? index : 0]
                                                 .isBull
-                                            ? ColorPalette.darkGreen
-                                            : ColorPalette.darkRed,
+                                            ? ColorPalette.green
+                                            : ColorPalette.red,
                                         child: Center(
                                           child: Text(
                                             candles[index >= 0 ? index : 0]
@@ -237,7 +237,7 @@ class Chart extends StatelessWidget {
                                                 .round()
                                                 .toString(),
                                             style: TextStyle(
-                                              color: ColorPalette.blackColor,
+                                              color: ColorPalette.whiteColor,
                                               fontSize: 12,
                                             ),
                                           ),
@@ -420,7 +420,7 @@ class Chart extends StatelessWidget {
                               onPanDown(update.localPosition.dx);
                             },
                             child: Container(
-                              color: Color.fromARGB(1, 255, 255, 255),
+                              color: ColorPalette.primaryColor,
                             ),
                           ),
                         ),
