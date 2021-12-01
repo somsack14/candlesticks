@@ -290,7 +290,7 @@ class Chart extends StatelessWidget {
                                     decoration: BoxDecoration(
                                       border: Border.symmetric(
                                         vertical: BorderSide(
-                                          color: ColorPalette.greyColor,
+                                          color: ColorPalette.grayColor,
                                           width: 1,
                                         ),
                                       ),
