@@ -183,7 +183,7 @@ class Chart extends StatelessWidget {
                         0),
                     candles.length - 1)];
                 return Container(
-                  color: ColorPalette.darkBlue,
+                  color: ColorPalette.whiteColor,
                   child: Stack(
                     children: [
                       TimeRow(
@@ -237,7 +237,7 @@ class Chart extends StatelessWidget {
                                                 .round()
                                                 .toString(),
                                             style: TextStyle(
-                                              color: ColorPalette.grayColor,
+                                              color: ColorPalette.blackColor,
                                               fontSize: 12,
                                             ),
                                           ),
@@ -255,7 +255,7 @@ class Chart extends StatelessWidget {
                                         decoration: BoxDecoration(
                                           border: Border.symmetric(
                                             vertical: BorderSide(
-                                              color: ColorPalette.grayColor,
+                                              color: ColorPalette.blackColor,
                                               width: 1,
                                             ),
                                           ),
@@ -290,7 +290,7 @@ class Chart extends StatelessWidget {
                                     decoration: BoxDecoration(
                                       border: Border.symmetric(
                                         vertical: BorderSide(
-                                          color: ColorPalette.grayColor,
+                                          color: ColorPalette.greyColor,
                                           width: 1,
                                         ),
                                       ),
@@ -319,7 +319,7 @@ class Chart extends StatelessWidget {
                                               Text(
                                                 "-${priceToString(getRoof(volumeHigh))}",
                                                 style: TextStyle(
-                                                  color: ColorPalette.grayColor,
+                                                  color: ColorPalette.blackColor,
                                                   fontSize: 12,
                                                 ),
                                               ),
@@ -346,7 +346,7 @@ class Chart extends StatelessWidget {
                                 children: [
                                   DashLine(
                                     length: constraints.maxWidth - 50,
-                                    color: ColorPalette.grayColor,
+                                    color: ColorPalette.blackColor,
                                     direction: Axis.horizontal,
                                     thickness: 1.5,
                                   ),
@@ -389,7 +389,7 @@ class Chart extends StatelessWidget {
                                 children: [
                                   DashLine(
                                     length: constraints.maxHeight - 20,
-                                    color: ColorPalette.grayColor,
+                                    color: ColorPalette.blackColor,
                                     direction: Axis.vertical,
                                     thickness: 1.5,
                                   ),

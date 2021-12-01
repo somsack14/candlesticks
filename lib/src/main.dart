@@ -80,7 +80,7 @@ class _CandlesticksState extends State<Candlesticks> {
     return Column(
       children: [
         Container(
-          color: ColorPalette.barColor,
+          color: ColorPalette.whiteColor,
           child: Padding(
             padding: const EdgeInsets.all(2.0),
             child: Row(
@@ -94,7 +94,7 @@ class _CandlesticksState extends State<Candlesticks> {
                   },
                   child: Icon(
                     Icons.remove,
-                    color: ColorPalette.grayColor,
+                    color: ColorPalette.blackColor,
                   ),
                 ),
                 CustomButton(
@@ -106,7 +106,7 @@ class _CandlesticksState extends State<Candlesticks> {
                   },
                   child: Icon(
                     Icons.add,
-                    color: ColorPalette.grayColor,
+                    color: ColorPalette.blackColor,
                   ),
                 ),
                 CustomButton(
@@ -117,7 +117,7 @@ class _CandlesticksState extends State<Candlesticks> {
                         return Center(
                           child: Container(
                             width: 200,
-                            color: ColorPalette.digalogColor,
+                            color: ColorPalette.primaryColor,
                             child: Wrap(
                               children: (widget.intervals ?? intervals)
                                   .map(
@@ -125,11 +125,11 @@ class _CandlesticksState extends State<Candlesticks> {
                                       padding: const EdgeInsets.all(8.0),
                                       child: CustomButton(
                                         width: 50,
-                                        color: ColorPalette.lightGold,
+                                        color: ColorPalette.whiteColor,
                                         child: Text(
                                           e,
                                           style: TextStyle(
-                                            color: ColorPalette.gold,
+                                            color: ColorPalette.primaryColor,
                                           ),
                                         ),
                                         onPressed: () {
@@ -149,7 +149,7 @@ class _CandlesticksState extends State<Candlesticks> {
                   child: Text(
                     widget.interval,
                     style: TextStyle(
-                      color: ColorPalette.grayColor,
+                      color: ColorPalette.blackColor,
                     ),
                   ),
                 ),

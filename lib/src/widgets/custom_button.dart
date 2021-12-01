@@ -21,7 +21,7 @@ class CustomButton extends StatelessWidget {
       width: width ?? 30,
       height: 30,
       child: RawMaterialButton(
-        fillColor: color ?? ColorPalette.barColor,
+        fillColor: color ?? ColorPalette.whiteColor,
         onPressed: onPressed,
         child: child,
       ),
