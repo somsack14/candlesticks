@@ -344,12 +344,12 @@ class Chart extends StatelessWidget {
                                 children: [
                                   DashLine(
                                     length: constraints.maxWidth - 50,
-                                    color: ColorPalette.red,
+                                    color: ColorPalette.primaryColor,
                                     direction: Axis.horizontal,
                                     thickness: 1.5,
                                   ),
                                   Container(
-                                    color: ColorPalette.digalogColor,
+                                    color: ColorPalette.primaryColor,
                                     child: Center(
                                       child: Text(
                                         hoverY < maxHeight * 0.75
@@ -369,7 +369,7 @@ class Chart extends StatelessWidget {
                                                             (maxHeight * 0.25 -
                                                                 10))),
                                         style: TextStyle(
-                                          color: ColorPalette.grayColor,
+                                          color: ColorPalette.whiteColor,
                                           fontSize: 12,
                                         ),
                                       ),
@@ -386,7 +386,7 @@ class Chart extends StatelessWidget {
                                 children: [
                                   DashLine(
                                     length: constraints.maxHeight - 20,
-                                    color: ColorPalette.red,
+                                    color: ColorPalette.primaryColor,
                                     direction: Axis.vertical,
                                     thickness: 1.5,
                                   ),
