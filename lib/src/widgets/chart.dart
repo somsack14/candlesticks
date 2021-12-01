@@ -8,7 +8,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 import '../models/candle.dart';
 import 'package:candlesticks/src/constant/scales.dart';
-import 'package:flutter/foundation.dart' show kIsWeb;
 import 'dash_line.dart';
 
 /// This widget manages gestures
@@ -339,8 +338,7 @@ class Chart extends StatelessWidget {
                           ),
                         ],
                       ),
-                      kIsWeb
-                          ? Positioned(
+                      Positioned(
                               top: hoverY - 10,
                               child: Row(
                                 children: [
@@ -382,9 +380,8 @@ class Chart extends StatelessWidget {
                                 ],
                               ),
                             )
-                          : Container(),
-                      kIsWeb
-                          ? Positioned(
+                          ,
+                 Positioned(
                               child: Column(
                                 children: [
                                   DashLine(
@@ -397,7 +394,7 @@ class Chart extends StatelessWidget {
                               ),
                               left: hoverX,
                             )
-                          : Container(),
+                          ,
                       Padding(
                         padding: const EdgeInsets.symmetric(
                             vertical: 4, horizontal: 12),
