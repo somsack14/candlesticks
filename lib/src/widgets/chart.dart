@@ -346,7 +346,7 @@ class Chart extends StatelessWidget {
                                 children: [
                                   DashLine(
                                     length: constraints.maxWidth - 50,
-                                    color: ColorPalette.blackColor,
+                                    color: ColorPalette.red,
                                     direction: Axis.horizontal,
                                     thickness: 1.5,
                                   ),
@@ -389,7 +389,7 @@ class Chart extends StatelessWidget {
                                 children: [
                                   DashLine(
                                     length: constraints.maxHeight - 20,
-                                    color: ColorPalette.blackColor,
+                                    color: ColorPalette.red,
                                     direction: Axis.vertical,
                                     thickness: 1.5,
                                   ),
