@@ -18,7 +18,7 @@ class CustomButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      width: width ?? 30,
+      width: width ?? 50,
       height: 30,
       child: RawMaterialButton(
         fillColor: color ?? ColorPalette.whiteColor,

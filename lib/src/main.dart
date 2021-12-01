@@ -116,7 +116,7 @@ class _CandlesticksState extends State<Candlesticks> {
                       builder: (context) {
                         return Center(
                           child: Container(
-                            width: 200,
+                            width: 300,
                             color: ColorPalette.primaryColor,
                             child: Wrap(
                               children: (widget.intervals ?? intervals)
